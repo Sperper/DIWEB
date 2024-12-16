@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comportamiento de Inherit, Initial, Unset y Revert</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            color: darkblue;
+        }
+        
+        
+        p {
+            font-size: 18px;
+            color: darkgreen;
+        }
+        
+        
+        .inherit-text {
+            color: inherit;
+        }
+
+        .initial-text {
+            color: initial;
+        }
+
+        .unset-text {
+            color: unset;
+        }
+
+        .revert-text {
+            color: revert;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplos con inherit, initial, unset y revert</h1>
+
+    <p>Este es un párrafo normal. <span class="inherit-text">Texto con inherit</span>. </p>
+
+    <p>Este es un párrafo normal. <span class="initial-text">Texto con initial</span>.</p>
+
+    <p>Este es un párrafo normal. <span class="unset-text">Texto con unset</span>.</p>
+
+    <p>Este es un párrafo normal. <span class="revert-text">Texto con revert</span>.</p>
+
+</body>
+</html>

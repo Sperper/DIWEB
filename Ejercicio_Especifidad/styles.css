@@ -1,0 +1,45 @@
+h1 {
+    color: blue;
+}
+
+
+.titulo {
+    color: green;
+}
+
+
+#parrafo {
+    color: purple;
+}
+
+
+div .texto {
+    color: orange !important;
+}
+
+
+p {
+    color: gray;
+}
+
+
+/*
+
+¿Que color se aplica finalmente al encabezado <h1>?
+
+    El color que finalmente se aplica es rojo, debido a que el estilo en línea
+    tiene mayor especificidad que las reglas de clase o elemento en el archivo CSS. 
+    Los estilos en línea siempre tienen prioridad sobre los estilos definidos externamente.
+
+¿Cuál es el color del párrafo con el ID parrafo?
+
+    
+    El color del párrafo con el ID parrafo es púrpura. 
+    La regla CSS que prevalece es la que utiliza el selector de ID, 
+    ya que los selectores de ID tienen mayor especificidad que las reglas de tipo de elemento o clase.
+
+¿Qué color tiene del párrafo con la clase texto dentro del div contenedor?
+
+    El color del párrafo con la clase texto dentro del div es naranja, debido a que se utiliza !important en la regla CSS que lo define. 
+
+*/

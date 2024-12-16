@@ -1,0 +1,48 @@
+/* Estilos generales de la tabla */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-spacing: 10px;
+    table-layout: fixed;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Estilo para el título de la tabla (caption) */
+caption {
+    caption-side: top; /* Coloca el título debajo de la tabla */
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Estilo para los encabezados de la tabla */
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Estilo para las celdas */
+td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+}
+
+    
+
+/* Borde de la tabla */
+table, th, td {
+    border: 2px solid #ccc;
+}
+
+/* Ajuste del espaciado y bordes */
+table {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}

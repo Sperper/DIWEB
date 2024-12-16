@@ -1,0 +1,116 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 16px 32px; 
+}
+
+.site-title {
+    font-size: 28.8px; 
+}
+
+.nav-primary {
+    display: flex;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 24px; 
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+    padding: 32px; 
+}
+
+.hero-section {
+    background-color: #e2e2e2;
+    padding: 48px; 
+    text-align: center;
+}
+
+.hero-section h2 {
+    font-size: 35.2px; 
+    margin-bottom: 16px; 
+}
+
+.hero-section p {
+    margin-bottom: 24px; 
+}
+
+.btn {
+    padding: 12px 24px; 
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #333;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #555;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    gap: 24px; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-item {
+    background-color: white;
+    padding: 24px; 
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    flex: 50%;
+}
+
+/* Footer Styles */
+.main-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}

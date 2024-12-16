@@ -1,0 +1,33 @@
+/* Estilo para el div con display: block */
+.div-block {
+    display: block;
+    background-color: lightblue;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Estilo para los elementos span con display: inline */
+.inline-span {
+    display: inline;
+    background-color: lightgreen;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+/* Estilo para los elementos div con display: inline-block */
+.inline-block-div {
+    display: inline-block;
+    background-color: lightcoral;
+    width: 100px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.hidden-element {
+    display: none;
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+

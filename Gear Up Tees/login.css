@@ -1,0 +1,74 @@
+/* Sección Hero */
+.hero {
+    background-image: url('HOMEDIWEB.png');
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* Productos Más Vendidos */
+.productos {
+    background-color: #ff3b30;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.productos img {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Productos Equipos */
+.equipos {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.producto {
+    text-align: center;
+    width: 200px;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.producto p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Navbar ajustes */
+.navbar {
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+}
+
+.nav-links a {
+    color: #000;
+}
+

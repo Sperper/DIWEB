@@ -1,0 +1,15 @@
+p {
+    color: #b41f1f;
+}
+
+.titulo {
+    color: #1fb41f
+}
+
+#parrafo {
+    color: blue;
+}
+
+div.texto {
+    color: aqua !important;
+}

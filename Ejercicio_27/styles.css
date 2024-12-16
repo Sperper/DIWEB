@@ -1,0 +1,41 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Estilos de las columnas */
+.column {
+  width: 22%;
+  float: left; /* Flotamos las columnas a la izquierda */
+  margin: 1%;
+  padding: 15px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+}
+
+
+
+/* Estilos del pie de página */
+footer {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  clear: both; /* Evitamos que el pie de página sea afectado por el float de las columnas */
+}
+
+/* Responsivo para pantallas pequeñas */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%; /* Las columnas se apilan en pantallas pequeñas */
+    float: none;
+    margin: 10px 0;
+  }
+}

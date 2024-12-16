@@ -1,0 +1,41 @@
+/*
+    Crea un pequeño menú con iconos que representan las siguientes acciones: Inicio,Buscar y Configuraion.
+
+    Usa una imagen sprite que contenga todos los iconos en un solo archivo y emplea CSS para mostrar solo la parte correspondiente de la imagen en cada botón.
+*/
+
+/* Estilos generales */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.menu-item {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+    background-image: url(''); /* Ruta de la imagen sprite */
+    background-repeat: no-repeat;
+    text-indent: -9999px; /* Oculta el texto dentro del enlace */
+}
+
+/* Íconos dentro del sprite */
+
+/* Ícono de Inicio */
+.inicio {
+    background-position: 0 0; /* Ajusta según la posición del ícono de inicio en el sprite */
+}
+
+/* Ícono de Buscar */
+.buscar {
+    background-position: -50px 0; /* Mueve 50px para mostrar el ícono de buscar */
+}
+
+/* Ícono de Configuración */
+.configuracion {
+    background-position: -100px 0; /* Mueve 100px para mostrar el ícono de configuración */
+}

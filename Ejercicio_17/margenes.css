@@ -1,0 +1,14 @@
+h2 {
+    background-color: aqua;
+    margin: 20px;
+}
+
+p {
+    margin: 10px 20px 30px 40px;
+    background-color: blueviolet;
+}
+
+button {
+    margin: auto;
+    margin-top: 50px;
+}

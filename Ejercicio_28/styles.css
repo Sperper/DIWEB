@@ -1,0 +1,65 @@
+/* Contenedor principal */
+.main-container {
+    width: 80%;
+    margin:     auto; /* Centrado horizontal del contenedor */
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+/* Bloque centrado horizontalmente */
+.centered-block {
+    width: 60%;
+    margin: 0 auto; /* Centrado horizontal del bloque */
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+/* Texto centrado dentro de un contenedor */
+.centered-text {
+    width: 100%;
+    background-color: #17a2e7;
+    color: white;
+    text-align: center; /* Centra el texto */
+    padding: 15px;
+    margin: 20px 0;
+}
+
+/* Imagen centrada horizontalmente */
+.centered-image {
+    width: 100%;
+    display: block;
+    margin: auto; 
+    width: 500px;
+}
+
+/* Elementos alineados a la izquierda y derecha */
+.left-right-container {
+    display: flex;
+    justify-content: space-between; /* Alinea un elemento a la izquierda y otro a la derecha */
+    margin: 20px;
+    padding: 10px;
+    background-color: #fffdfd;
+}
+
+.left-item {
+    background-color: #00fd37;
+    padding: 10px;
+    text-align: left;
+}
+
+.right-item {
+    background-color: #ff0000;
+    padding: 10px;
+    text-align: right;
+}
+
+/* Elemento centrado verticalmente con padding y line-height */
+.vertical-center {
+    height: 200px;
+    padding: 40px;
+    background-color: #1445e6;
+    text-align: center;
+    line-height: 120px; /* La altura de la línea igual a la altura del contenedor menos el padding */
+}

@@ -1,0 +1,35 @@
+
+/* Contenedor que mantiene los cuadrados apilados */
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+/* Estilo común para cada cuadrado */
+.square {
+    position: absolute;  /* Hace que los cuadrados se apilen uno encima del otro */
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+/* Colores para cada cuadrado */
+#square1 {
+    background-color: #e74c3c; /* Rojo */
+    z-index: 3; /* Cuadrado con el valor z-index más bajo */
+}
+
+#square2 {
+    background-color: #2ecc71; /* Verde */
+    top: 30px; /* Desplaza ligeramente el cuadrado para que se apilen */
+    left: 30px;
+    z-index: 2; /* Este cuadrado tendrá el z-index más alto */
+}
+
+#square3 {
+    background-color: #f39c12; /* Amarillo */
+    top: 60px; /* Desplaza ligeramente más este cuadrado */
+    left: 60px;
+    z-index: 1; /* Este cuadrado está en medio */
+}

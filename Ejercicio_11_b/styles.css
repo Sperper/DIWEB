@@ -1,0 +1,48 @@
+
+section {
+  padding: 50px;
+  color: rgb(218, 17, 17);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Fondo blanco semitransparente detrás del texto */
+section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco al 50% de opacidad */
+  z-index: -1;
+}
+
+/* Sección con fondo y scroll */
+.scroll {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.protocolo.com.mx%2Fwp-content%2Fuploads%2Fprimera-imagenes.jpg&f=1&nofb=1&ipt=ef4881700c37704c1e31745914448a956f90689f852d107127d6082c06f91f7a&ipo=images");
+  background-size: cover;
+  background-attachment: scroll;
+  opacity: 0.5; /* 50% de transparencia */
+}
+
+/* Sección con fondo fijo */
+.fixed {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstorage.googleapis.com%2Fcrearsaludorg%2F2017%2F09%2Fsol.png&f=1&nofb=1&ipt=8286de8e55f8f3ac7f47892f6902a321e15d7f9c5cff6e10fbf21872729456fd&ipo=images");
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.5; /* 50% de transparencia */
+}
+
+/* Sección con fondo local */
+.local {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.-WILKPjFx2Vo1WQ-4bSFIwHaHQ%26pid%3DApi&f=1&ipt=271b8067dbf06ae6e5f0e2b0aaa84d0b816b3fc0819346bba490b553670952f8&ipo=images");
+  background-size: cover;
+  background-attachment: local;
+  opacity: 0.5; /* 50% de transparencia */
+}

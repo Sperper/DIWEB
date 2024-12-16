@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-elementos en CSS</title>
+    <style>
+      
+      p::first-line {
+        color: blue;
+        font-size: 24px;
+      }
+      
+      p::first-letter {
+        color: red;
+        font-size: 32px;
+        font-weight: bold;
+      }
+     
+      body::before {
+        content: "¡Prepárate para aprender CSS! ";
+        display: block;
+        font-size: 20px;
+        color: darkblue;
+        margin-bottom: 10px;
+      }
+      
+      body::after {
+        content: " ¡Sigue practicando y mejora cada día!";
+        display: block;
+        font-size: 20px;
+        color: green;
+        margin-top: 10px;
+      }
+      
+      ::selection {
+        background-color: yellow;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TITULO</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium turpis in ante laoreet, ac auctor justo facilisis.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium turpis in ante laoreet, ac auctor justo facilisis.
+    </p>
+  </body>
+</html>

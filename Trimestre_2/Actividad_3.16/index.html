@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video SD Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .video-container {
+            border: 2px solid black;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        video {
+            width: 640px;
+            height: 480px;
+            display: block;
+        }
+        .controls {
+            margin-top: 10px;
+        }
+        button {
+            background-color: #ff3b30;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #333;
+        }
+        a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #ff3b30;
+        }
+        a:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reproductor de Video en SD</h1>
+    <div class="video-container">
+        <video id="video">
+            <source src="tucan.webm" type="video/webm">
+            <source src="tucan.mp4" type="video/mp4">
+            <source src="tucan.ogv" type="video/ogg">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div>
+    
+    <div class="controls">
+        <button onclick="document.getElementById('video').play()">Reproducir</button>
+        <button onclick="document.getElementById('video').pause()">Pausar</button>
+    </div>
+
+    <a href="tucan.webm" download="tucan.webm">Descargar Video</a>
+    <a href="tucan.webm" target="_blank">Ver en Página Nueva</a>
+</html>

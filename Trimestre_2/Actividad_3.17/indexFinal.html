@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+
+        /* Ejercicio 1 - Animación de letra 'p' dentro de un h1 */
+        h1 {
+            font-size: 48px;
+            margin: 50px 0;
+        }
+        h1 p {
+            display: inline-block;
+            animation: moveLetter 4s linear 1s infinite alternate;
+        }
+        @keyframes moveLetter {
+            0% { transform: translateX(0) scale(1); color: red; }
+            50% { transform: translateX(100vw) scale(2); color: green; }
+            100% { transform: translateX(0) scale(1); color: blue; }
+        }
+
+        /* Ejercicio 2 - Efecto en link al pasar cursor */
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            transition: transform 0.5s linear, color 0.5s linear;
+        }
+        a:hover {
+            transform: rotate(180deg) scale(2);
+            color: red;
+        }
+
+        /* Ejercicio 3 - Círculo con animación de color */
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50%;
+            margin: 50px auto;
+            transition: background-color 1s ease;
+        }
+        .circle:hover {
+            background-color: orange;
+            transition-timing-function: steps(4);
+        }
+
+        /* Ejercicio 4 - Gráfico animado (SVG) */
+        .svg-container {
+            margin: 50px auto;
+            display: inline-block;
+        }
+        .svg-container svg {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+        .svg-container circle {
+            fill: purple;
+            animation: moveCircle 3s ease-in-out infinite alternate;
+        }
+        @keyframes moveCircle {
+            0% { cx: 50; }
+            100% { cx: 150; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ejercicio 1: Animación de letra 'p' dentro de un h1 -->
+    <h1><p>P</p></h1>
+
+    <!-- Ejercicio 2: Efecto en un enlace -->
+    <a href="#">Enlace animado</a>
+
+    <!-- Ejercicio 3: Círculo con animación de color -->
+    <div class="circle"></div>
+
+    <!-- Ejercicio 4: Gráfico animado (SVG) -->
+    <div class="svg-container">
+        <svg>
+            <circle cx="50" cy="100" r="50"></circle>
+        </svg>
+    </div>
+
+</body>
+</html>
